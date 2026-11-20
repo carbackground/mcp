@@ -52,6 +52,47 @@ claude mcp add --transport http carbackground https://api.carbackground.ai/mcp
 
 Connected apps are listed in the carbackground.ai app under Settings → MCP, where each one can be disconnected.
 
+## Install as a plugin
+
+The repository also installs as a plugin that adds the server and the skills below in one step.
+
+**Claude Code:**
+
+```
+/plugin marketplace add carbackground/mcp
+/plugin install carbackground@carbackground
+```
+
+**GitHub Copilot CLI:**
+
+```bash
+copilot plugin install carbackground/mcp
+```
+
+**VS Code:** Command Palette → "Chat: Install Plugin from Source", then enter `https://github.com/carbackground/mcp`.
+
+**Gemini CLI:**
+
+```bash
+gemini extensions install https://github.com/carbackground/mcp
+```
+
+**Kiro:** Powers panel → Add Custom Power → Import power from a repository URL, then enter `https://github.com/carbackground/mcp`.
+
+**Any agent that supports Agent Skills:**
+
+```bash
+npx skills add carbackground/mcp
+```
+
+## Skills
+
+| Skill | What it is for |
+| --- | --- |
+| [car-listing-photos](skills/car-listing-photos/SKILL.md) | Turn the photos of one car into a consistent listing set: same background, plates hidden, right shape. |
+| [dealer-inventory-photos](skills/dealer-inventory-photos/SKILL.md) | Process a whole dealer inventory in bulk through the REST API. |
+| [marketplace-photo-formats](skills/marketplace-photo-formats/SKILL.md) | The photo aspect ratio of about 90 car marketplaces, and whether they allow logos. [Full table](skills/marketplace-photo-formats/marketplaces.md). |
+
 ## What you can ask for
 
 - "Put this car in a white studio and blur the plate: https://example.com/car.jpg"
@@ -95,4 +136,6 @@ The same features are available as a REST API with API keys:
 
 - Email: hello@carbackground.ai
 - Website: https://carbackground.ai
+- Privacy: https://carbackground.ai/privacy
+- Terms: https://carbackground.ai/terms
 - Problems with this server: open an issue in this repository.

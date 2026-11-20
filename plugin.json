@@ -1,0 +1,15 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "carbackground",
+  "version": "1.0.0",
+  "description": "Turn car photos into dealership-quality listing photos: replace backgrounds, hide license plates, add dealer logos and reframe for marketplaces.",
+  "author": {
+    "name": "carbackground.ai",
+    "email": "hello@carbackground.ai",
+    "url": "https://carbackground.ai"
+  },
+  "homepage": "https://carbackground.ai",
+  "repository": "https://github.com/carbackground/mcp",
+  "license": "MIT",
+  "keywords": ["car-photos", "automotive", "background-removal", "car-dealership", "mcp"]
+}

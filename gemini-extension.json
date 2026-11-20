@@ -1,0 +1,10 @@
+{
+  "name": "carbackground",
+  "version": "1.0.0",
+  "description": "Turn car photos into dealership-quality listing photos: replace backgrounds, hide license plates, add dealer logos and reframe for marketplaces.",
+  "mcpServers": {
+    "carbackground": {
+      "httpUrl": "https://api.carbackground.ai/mcp"
+    }
+  }
+}
