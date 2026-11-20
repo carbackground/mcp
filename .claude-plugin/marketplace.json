@@ -1,0 +1,14 @@
+{
+  "name": "carbackground",
+  "owner": {
+    "name": "carbackground.ai",
+    "email": "hello@carbackground.ai"
+  },
+  "plugins": [
+    {
+      "name": "carbackground",
+      "source": "./",
+      "description": "Turn car photos into dealership-quality listing photos: replace backgrounds, hide license plates, add dealer logos and reframe for marketplaces."
+    }
+  ]
+}
